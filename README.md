@@ -10,7 +10,7 @@
 How to deliver the solution:
 
 1. Please create a fork of this repo
-2. Open a Pull Request with your changes
+2. Open a Pull Request with your changes (in the forked repo)
 3. List all your completed points in the PR description. 
 
 
