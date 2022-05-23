@@ -4,3 +4,7 @@
 4. Refactor networking layer to Combine - 2 points
 5. Make it able to use both combine и non-combine network layers - 1 point
 6. Make a unit test for network layer - 1 point
+
+===========
+
+Please create a PR with your changes and list all your completed points in the PR description. 
