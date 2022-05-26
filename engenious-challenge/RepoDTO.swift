@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Repo: Codable {
+struct RepoDTO: Codable {
     var name: String
     var description: String?
     var url: String
@@ -17,5 +17,5 @@ struct Repo: Codable {
         case description = "description"
         case url = "url"
     }
-}
 
+}
