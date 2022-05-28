@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20772DCD2842B613007226C3 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20772DCC2842B613007226C3 /* UIColor+hex.swift */; };
+		20772DCF2842B63A007226C3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20772DCE2842B63A007226C3 /* Coordinator.swift */; };
+		20772DD22842B6EB007226C3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20772DD12842B6EB007226C3 /* AppCoordinator.swift */; };
+		20772DD42842B70A007226C3 /* ReposFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20772DD32842B70A007226C3 /* ReposFlowCoordinator.swift */; };
+		20772DD72842B775007226C3 /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20772DD62842B775007226C3 /* ReposViewModel.swift */; };
+		20772DD92842B84D007226C3 /* ReposHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20772DD82842B84D007226C3 /* ReposHeaderView.swift */; };
+		20772DDB2842B89E007226C3 /* engenious_MockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20772DDA2842B89E007226C3 /* engenious_MockProtocol.swift */; };
 		20F3FA3128379AE2008BFAF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3FA3028379AE2008BFAF8 /* AppDelegate.swift */; };
 		20F3FA3328379AE2008BFAF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3FA3228379AE2008BFAF8 /* SceneDelegate.swift */; };
-		20F3FA3528379AE2008BFAF8 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3FA3428379AE2008BFAF8 /* RootViewController.swift */; };
+		20F3FA3528379AE2008BFAF8 /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3FA3428379AE2008BFAF8 /* ReposViewController.swift */; };
 		20F3FA3A28379AE3008BFAF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F3FA3928379AE3008BFAF8 /* Assets.xcassets */; };
 		20F3FA3D28379AE3008BFAF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F3FA3B28379AE3008BFAF8 /* LaunchScreen.storyboard */; };
 		20F3FA4828379AE3008BFAF8 /* engenious_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3FA4728379AE3008BFAF8 /* engenious_challengeTests.swift */; };
@@ -38,10 +45,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20772DCC2842B613007226C3 /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+		20772DCE2842B63A007226C3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		20772DD12842B6EB007226C3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		20772DD32842B70A007226C3 /* ReposFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposFlowCoordinator.swift; sourceTree = "<group>"; };
+		20772DD62842B775007226C3 /* ReposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
+		20772DD82842B84D007226C3 /* ReposHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposHeaderView.swift; sourceTree = "<group>"; };
+		20772DDA2842B89E007226C3 /* engenious_MockProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = engenious_MockProtocol.swift; sourceTree = "<group>"; };
 		20F3FA2D28379AE2008BFAF8 /* engenious-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "engenious-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F3FA3028379AE2008BFAF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20F3FA3228379AE2008BFAF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		20F3FA3428379AE2008BFAF8 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		20F3FA3428379AE2008BFAF8 /* ReposViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewController.swift; sourceTree = "<group>"; };
 		20F3FA3928379AE3008BFAF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20F3FA3C28379AE3008BFAF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20F3FA3E28379AE3008BFAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +94,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20772DC42842B523007226C3 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				20772DC72842B566007226C3 /* Repos */,
+				20772DD12842B6EB007226C3 /* AppCoordinator.swift */,
+			);
+			name = Flows;
+			sourceTree = "<group>";
+		};
+		20772DC52842B547007226C3 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				20772DCA2842B5D0007226C3 /* Protocols */,
+				20772DC92842B5C2007226C3 /* Extensions */,
+			);
+			name = Share;
+			sourceTree = "<group>";
+		};
+		20772DC62842B550007226C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20F3FA6228379F1D008BFAF8 /* Repo.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		20772DC72842B566007226C3 /* Repos */ = {
+			isa = PBXGroup;
+			children = (
+				20772DD02842B68A007226C3 /* Controllers */,
+				20772DD52842B75E007226C3 /* ViewModels */,
+				20772DD32842B70A007226C3 /* ReposFlowCoordinator.swift */,
+			);
+			name = Repos;
+			sourceTree = "<group>";
+		};
+		20772DC82842B586007226C3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				20F3FA6028379F06008BFAF8 /* NetworkService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		20772DC92842B5C2007226C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				20772DCC2842B613007226C3 /* UIColor+hex.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		20772DCA2842B5D0007226C3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				20772DCE2842B63A007226C3 /* Coordinator.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		20772DCB2842B5ED007226C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				20F3FA642837D07F008BFAF8 /* RepoTableViewCell.swift */,
+				20772DD82842B84D007226C3 /* ReposHeaderView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		20772DD02842B68A007226C3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				20F3FA3428379AE2008BFAF8 /* ReposViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		20772DD52842B75E007226C3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				20772DD62842B775007226C3 /* ReposViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
 		20F3FA2428379AE2008BFAF8 = {
 			isa = PBXGroup;
 			children = (
@@ -103,12 +202,13 @@
 		20F3FA2F28379AE2008BFAF8 /* engenious-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				20772DC42842B523007226C3 /* Flows */,
+				20772DCB2842B5ED007226C3 /* Views */,
+				20772DC62842B550007226C3 /* Models */,
+				20772DC82842B586007226C3 /* Services */,
+				20772DC52842B547007226C3 /* Share */,
 				20F3FA3028379AE2008BFAF8 /* AppDelegate.swift */,
 				20F3FA3228379AE2008BFAF8 /* SceneDelegate.swift */,
-				20F3FA3428379AE2008BFAF8 /* RootViewController.swift */,
-				20F3FA642837D07F008BFAF8 /* RepoTableViewCell.swift */,
-				20F3FA6028379F06008BFAF8 /* NetworkService.swift */,
-				20F3FA6228379F1D008BFAF8 /* Repo.swift */,
 				20F3FA3928379AE3008BFAF8 /* Assets.xcassets */,
 				20F3FA3B28379AE3008BFAF8 /* LaunchScreen.storyboard */,
 				20F3FA3E28379AE3008BFAF8 /* Info.plist */,
@@ -120,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				20F3FA4728379AE3008BFAF8 /* engenious_challengeTests.swift */,
+				20772DDA2842B89E007226C3 /* engenious_MockProtocol.swift */,
 			);
 			path = "engenious-challengeTests";
 			sourceTree = "<group>";
@@ -263,10 +364,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20F3FA3528379AE2008BFAF8 /* RootViewController.swift in Sources */,
+				20772DD72842B775007226C3 /* ReposViewModel.swift in Sources */,
+				20772DD42842B70A007226C3 /* ReposFlowCoordinator.swift in Sources */,
+				20772DCF2842B63A007226C3 /* Coordinator.swift in Sources */,
+				20772DCD2842B613007226C3 /* UIColor+hex.swift in Sources */,
+				20F3FA3528379AE2008BFAF8 /* ReposViewController.swift in Sources */,
 				20F3FA3128379AE2008BFAF8 /* AppDelegate.swift in Sources */,
 				20F3FA6328379F1D008BFAF8 /* Repo.swift in Sources */,
 				20F3FA6128379F06008BFAF8 /* NetworkService.swift in Sources */,
+				20772DD22842B6EB007226C3 /* AppCoordinator.swift in Sources */,
+				20772DD92842B84D007226C3 /* ReposHeaderView.swift in Sources */,
 				20F3FA3328379AE2008BFAF8 /* SceneDelegate.swift in Sources */,
 				20F3FA652837D07F008BFAF8 /* RepoTableViewCell.swift in Sources */,
 			);
@@ -277,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20F3FA4828379AE3008BFAF8 /* engenious_challengeTests.swift in Sources */,
+				20772DDB2842B89E007226C3 /* engenious_MockProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

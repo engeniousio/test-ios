@@ -8,32 +8,43 @@
 import Foundation
 import Combine
 
-struct RepositoryService {
-
+final class NetworkService {
+    private let session: URLSession
+    private let decoder = JSONDecoder()
+    private var cancellable: AnyCancellable?
+    
+    init(session: URLSession = URLSession.shared) {
+        self.session = session
+        self.decoder.keyDecodingStrategy = .convertFromSnakeCase
+    }
+    
+    func fetchUserRepos(username: String) -> AnyPublisher<[Repo], Never> {
+        guard let url = fullURL(username: username) else {
+            return Just([]).eraseToAnyPublisher()
+        }
+        return makePublisher(url: url)
+    }
+    
     func getUserRepos(username: String, completion: @escaping ([Repo]) -> Void) {
-        guard let url = URL(string: "https://api.github.com/users/\(username)/repos") else {
+        guard let _ = fullURL(username: username) else {
             return completion([])
         }
-
-        let session = URLSession.shared
-        let request = URLRequest(url: url)
-        let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
-            guard error == nil else {
-                return
-            }
-            guard let data = data else {
-                return
-            }
-            do {
-                let decoder = JSONDecoder()
-                decoder.keyDecodingStrategy = .convertFromSnakeCase
-                let response = try decoder.decode([Repo].self, from: data)
-                completion(response)
-            } catch {
-
-            }
-        })
-        task.resume()
+        self.cancellable = fetchUserRepos(username: username)
+            .sink { repos in
+                completion(repos)
+        }
     }
-
+    
+    private func fullURL(username: String) -> URL? {
+        return URL(string: "https://api.github.com/users/\(username)/repos")
+    }
+    
+    private func makePublisher(url: URL) -> AnyPublisher<[Repo], Never> {
+        return session.dataTaskPublisher(for: url)
+            .map { $0.data }
+            .decode(type: [Repo].self, decoder: decoder)
+            .catch { error in Just([]) }
+            .receive(on: RunLoop.main)
+            .eraseToAnyPublisher()
+    }
 }
