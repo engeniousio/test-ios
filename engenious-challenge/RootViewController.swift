@@ -8,53 +8,53 @@
 import UIKit
 import Combine
 
-class RootViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class RootViewController: UIViewController {
     let repositoryService: RepositoryService = RepositoryService()
-    let username: String = "Apple"
+    let userName: String = "Apple"
+    let tableView = UITableView()
+    
     var repoList: [Repo] = []
     
-    let tv = UITableView()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-
-        title = "\(username)'s repos"
+        
+        title = "\(userName)'s repos"
         navigationController?.navigationBar.prefersLargeTitles = true
-
-        tv.delegate = self
-        tv.dataSource = self
-        tv.register(RepoTableViewCell.self, forCellReuseIdentifier: String(describing: RepoTableViewCell.self))
-        tv.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(tv)
-        tv.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        tv.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        tv.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        tv.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(RepoTableViewCell.self, forCellReuseIdentifier: String(describing: RepoTableViewCell.self))
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(tableView)
+        tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
         getRepos()
     }
-
-    func getRepos() {
-        repositoryService.getUserRepos(username: username) { value in
+    
+    private func getRepos() {
+        repositoryService.getUserRepos(username: userName) { value in
             DispatchQueue.main.async {
                 self.repoList = value
-                self.tv.reloadData()
+                self.tableView.reloadData()
             }
         }
     }
+}
 
+//MARK: - Delegate & DataSource
+extension RootViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return repoList.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RepoTableViewCell.self)) as? RepoTableViewCell else { return UITableViewCell() }
         let repo = repoList[indexPath.row]
         cell.titleLabel.text = repo.name
         return cell
     }
-
 }
-
