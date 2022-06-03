@@ -36,11 +36,17 @@ class RootViewModel: NSObject, RootViewModelProtocol {
     private var repoList: [Repo] = []
     
     func getRepos() {
-        repositoryService.getUserRepos(username: userName) { value in
-            DispatchQueue.main.async { [weak self] in
-                guard let self = self else { return }
-                self.repoList = value
-                self.reposUpdated?()
+        repositoryService.getUserRepos(username: userName) { result in
+            switch result {
+            case .failure(let error):
+                NSLog("The error: %@", error.localizedDescription)
+                return
+            case .success(let repositories):
+                DispatchQueue.main.async { [weak self] in
+                    guard let self = self else { return }
+                    self.repoList = repositories
+                    self.reposUpdated?()
+                }
             }
         }
     }

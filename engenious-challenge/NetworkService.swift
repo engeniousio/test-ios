@@ -8,24 +8,49 @@
 import Foundation
 import Combine
 
+// MARK: - Error
+enum NetworkError: Error {
+    case responceError
+    case dataError
+    case empty
+    case parsing
+}
+
+// MARK: - Sevice
 struct RepositoryService {
-    func getUserRepos(username: String, completion: @escaping ([Repo]) -> Void) {
-        guard let url = URL(string: "https://api.github.com/users/\(username)/repos") else {
-            return completion([])
+    static let urlString = "https://api.github.com/users/%@/repos"
+    private let session: URLSession
+    
+    init(session: URLSession = URLSession.shared) {
+        self.session = session
+    }
+    
+    func getUserRepos(username: String, completion: @escaping (Result<[Repo], NetworkError>) -> Void) {
+        let formattedUrlString = String(format: RepositoryService.urlString, username)
+        guard let url = URL(string: formattedUrlString) else {
+            return completion(.failure(.empty))
         }
         
-        let session = URLSession.shared
         let request = URLRequest(url: url)
         let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
-            guard error == nil else { return }
-            guard let data = data else { return }
+            guard error == nil else {
+                return completion(.failure(.responceError))
+            }
+            guard let data = data else {
+                return completion(.failure(.dataError))
+            }
             
             do {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 let response = try decoder.decode([Repo].self, from: data)
-                completion(response)
-            } catch { }
+                guard !response.isEmpty else {
+                    return completion(.failure(.empty))
+                }
+                completion(.success(response))
+            } catch {
+                NSLog("Parsing JSON problem")
+            }
         })
         
         task.resume()
