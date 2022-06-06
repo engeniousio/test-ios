@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05010E0C284D590F00723A52 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05010E0B284D590F00723A52 /* UIView.swift */; };
+		05010E0E284D5DE200723A52 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05010E0D284D5DE200723A52 /* RootCoordinator.swift */; };
+		05010E10284D5DF500723A52 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05010E0F284D5DF500723A52 /* BaseCoordinator.swift */; };
+		05010E12284D63E500723A52 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05010E11284D63E500723A52 /* UITableView.swift */; };
+		05010E15284D663A00723A52 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05010E14284D663A00723A52 /* HeaderView.swift */; };
+		0515D19C284D367E00F0EA41 /* RootViewControllerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515D19B284D367E00F0EA41 /* RootViewControllerVM.swift */; };
+		0515D19F284D380800F0EA41 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0515D19E284D380800F0EA41 /* ColorAssets.xcassets */; };
+		0515D1A1284D388C00F0EA41 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515D1A0284D388C00F0EA41 /* UIColor.swift */; };
 		20F3FA3128379AE2008BFAF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3FA3028379AE2008BFAF8 /* AppDelegate.swift */; };
 		20F3FA3328379AE2008BFAF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3FA3228379AE2008BFAF8 /* SceneDelegate.swift */; };
 		20F3FA3528379AE2008BFAF8 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3FA3428379AE2008BFAF8 /* RootViewController.swift */; };
@@ -16,7 +24,7 @@
 		20F3FA5228379AE3008BFAF8 /* engenious_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3FA5128379AE3008BFAF8 /* engenious_challengeUITests.swift */; };
 		20F3FA5428379AE3008BFAF8 /* engenious_challengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3FA5328379AE3008BFAF8 /* engenious_challengeUITestsLaunchTests.swift */; };
 		20F3FA6128379F06008BFAF8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3FA6028379F06008BFAF8 /* NetworkService.swift */; };
-		20F3FA6328379F1D008BFAF8 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3FA6228379F1D008BFAF8 /* Repo.swift */; };
+		20F3FA6328379F1D008BFAF8 /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3FA6228379F1D008BFAF8 /* RepoModel.swift */; };
 		20F3FA652837D07F008BFAF8 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F3FA642837D07F008BFAF8 /* RepoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05010E0B284D590F00723A52 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		05010E0D284D5DE200723A52 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		05010E0F284D5DF500723A52 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		05010E11284D63E500723A52 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		05010E14284D663A00723A52 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		0515D19B284D367E00F0EA41 /* RootViewControllerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerVM.swift; sourceTree = "<group>"; };
+		0515D19E284D380800F0EA41 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
+		0515D1A0284D388C00F0EA41 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		20F3FA2D28379AE2008BFAF8 /* engenious-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "engenious-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F3FA3028379AE2008BFAF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20F3FA3228379AE2008BFAF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +67,7 @@
 		20F3FA5128379AE3008BFAF8 /* engenious_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = engenious_challengeUITests.swift; sourceTree = "<group>"; };
 		20F3FA5328379AE3008BFAF8 /* engenious_challengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = engenious_challengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		20F3FA6028379F06008BFAF8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		20F3FA6228379F1D008BFAF8 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		20F3FA6228379F1D008BFAF8 /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
 		20F3FA642837D07F008BFAF8 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +96,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05010E13284D662D00723A52 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				05010E14284D663A00723A52 /* HeaderView.swift */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		0515D191284D300D00F0EA41 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0515D194284D302B00F0EA41 /* RootViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0515D194284D302B00F0EA41 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0515D195284D303000F0EA41 /* Cell */,
+				20F3FA3428379AE2008BFAF8 /* RootViewController.swift */,
+				0515D19B284D367E00F0EA41 /* RootViewControllerVM.swift */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		0515D195284D303000F0EA41 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				20F3FA642837D07F008BFAF8 /* RepoTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0515D197284D304300F0EA41 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				20F3FA3928379AE3008BFAF8 /* Assets.xcassets */,
+				20F3FA3028379AE2008BFAF8 /* AppDelegate.swift */,
+				20F3FA3228379AE2008BFAF8 /* SceneDelegate.swift */,
+				0515D19E284D380800F0EA41 /* ColorAssets.xcassets */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		0515D198284D304F00F0EA41 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20F3FA6228379F1D008BFAF8 /* RepoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0515D199284D306A00F0EA41 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				20F3FA6028379F06008BFAF8 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0515D19A284D358500F0EA41 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0515D1A0284D388C00F0EA41 /* UIColor.swift */,
+				05010E0B284D590F00723A52 /* UIView.swift */,
+				05010E11284D63E500723A52 /* UITableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0515D19D284D36DB00F0EA41 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				05010E0D284D5DE200723A52 /* RootCoordinator.swift */,
+				05010E0F284D5DF500723A52 /* BaseCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		20F3FA2428379AE2008BFAF8 = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +199,15 @@
 		20F3FA2F28379AE2008BFAF8 /* engenious-challenge */ = {
 			isa = PBXGroup;
 			children = (
-				20F3FA3028379AE2008BFAF8 /* AppDelegate.swift */,
-				20F3FA3228379AE2008BFAF8 /* SceneDelegate.swift */,
-				20F3FA3428379AE2008BFAF8 /* RootViewController.swift */,
-				20F3FA642837D07F008BFAF8 /* RepoTableViewCell.swift */,
-				20F3FA6028379F06008BFAF8 /* NetworkService.swift */,
-				20F3FA6228379F1D008BFAF8 /* Repo.swift */,
-				20F3FA3928379AE3008BFAF8 /* Assets.xcassets */,
-				20F3FA3B28379AE3008BFAF8 /* LaunchScreen.storyboard */,
+				05010E13284D662D00723A52 /* VIews */,
+				0515D191284D300D00F0EA41 /* Controllers */,
+				0515D19D284D36DB00F0EA41 /* Coordinators */,
+				0515D19A284D358500F0EA41 /* Extensions */,
+				0515D198284D304F00F0EA41 /* Models */,
+				0515D199284D306A00F0EA41 /* Services */,
+				0515D197284D304300F0EA41 /* System */,
 				20F3FA3E28379AE3008BFAF8 /* Info.plist */,
+				20F3FA3B28379AE3008BFAF8 /* LaunchScreen.storyboard */,
 			);
 			path = "engenious-challenge";
 			sourceTree = "<group>";
@@ -238,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20F3FA3D28379AE3008BFAF8 /* LaunchScreen.storyboard in Resources */,
+				0515D19F284D380800F0EA41 /* ColorAssets.xcassets in Resources */,
 				20F3FA3A28379AE3008BFAF8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,10 +362,17 @@
 			files = (
 				20F3FA3528379AE2008BFAF8 /* RootViewController.swift in Sources */,
 				20F3FA3128379AE2008BFAF8 /* AppDelegate.swift in Sources */,
-				20F3FA6328379F1D008BFAF8 /* Repo.swift in Sources */,
+				05010E0E284D5DE200723A52 /* RootCoordinator.swift in Sources */,
+				05010E0C284D590F00723A52 /* UIView.swift in Sources */,
+				0515D19C284D367E00F0EA41 /* RootViewControllerVM.swift in Sources */,
+				05010E12284D63E500723A52 /* UITableView.swift in Sources */,
+				20F3FA6328379F1D008BFAF8 /* RepoModel.swift in Sources */,
 				20F3FA6128379F06008BFAF8 /* NetworkService.swift in Sources */,
+				0515D1A1284D388C00F0EA41 /* UIColor.swift in Sources */,
 				20F3FA3328379AE2008BFAF8 /* SceneDelegate.swift in Sources */,
+				05010E10284D5DF500723A52 /* BaseCoordinator.swift in Sources */,
 				20F3FA652837D07F008BFAF8 /* RepoTableViewCell.swift in Sources */,
+				05010E15284D663A00723A52 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +541,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44B387YQ4J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "engenious-challenge/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -444,6 +549,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +570,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44B387YQ4J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "engenious-challenge/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -471,6 +578,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
